@@ -1,2 +1,11 @@
 # Archery-Game
 Physics bases archery game which pits either two players or one player and one computer in a one-on-one archery battle
+
+Controls:
+Each player can choose to move forward or backwards (A and D) before firing their shot.  Each player then has the option to use a special arrow.  Their options include a seeking arrow which allows the player to adjust the vertical trajectory up and down using the W (up) and S (down) keys.  Secondly there is a scatter arrow which when halfway to the other player will split into 3 arrows where the two new arrows spilt up above and below the original arrow.  Lastly there is the rain arrow which when the player presses S the arrow will split into 3 which will drop on the opponent.  Each Player can use up to 3 seeking arrows and 1 scatter/rain arrow.  The player can then fire their arrow by clicking on their player and then dragging forward at the trajectory that they wish the arrow to start travelling.
+
+Logistics:
+Each player starts the game with 3 hearts.  A leg shot will deal .5, a body shot will deal 1, and a head shot will deal 1.5 hearts.  Each turn there is a randomly generated wind which can either speedup or slow down the arrow and is represented in the top right with either 1 or 2 flags pointing in the direction of the wind with 1 flag representing lighter and 2 flags representing heavier winds.  The One player mode includes an AI controlled opponent that will fire arrows that will either hit the player or land very close, however the AI controlled player will become more accurate the lower health it has (so finish it off quickly).
+
+Engine:
+This game was designed as a physics project which I have updated further after the due date to include an AI opponent and power-up arrows.  As it was orignally designed as a physics project the movement of the arrow is calculated using physics including projectile motion and drag.  The calculations simulate a wooden arrow flying through the air with the same air denisty and gravity as earth.  This project used the Allegro graphics library for all of the drawing to the screen and links to all of the images used can be found at the end of the main.cpp file.  The currently compiled version of the code can be run using the ArcheryTest.exe file as long as alleg42.dll is located in the same directory.
